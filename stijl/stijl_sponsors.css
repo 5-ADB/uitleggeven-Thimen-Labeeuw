@@ -1,0 +1,52 @@
+.info-tekst {
+  background-color: var(--geel);
+}
+
+.info-tekst .main-info {
+  color: var(--donkerGrijs);
+}
+
+.info-div {
+  margin-bottom: 40px;
+}
+
+.grid-v {
+  display: grid;
+}
+
+.sponsors {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.sponsors #big > div {
+  height: 350px;
+  margin-bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sponsors #middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.sponsors #middle > div {
+  height: 310px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sponsors #small {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.sponsors #small > div {
+  height: 160px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

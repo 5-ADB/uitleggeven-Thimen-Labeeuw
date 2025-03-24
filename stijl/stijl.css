@@ -1,0 +1,447 @@
+:root {
+  --geel: #f4e717;
+  --roze: #df0757;
+  --donkerGrijs: #333;
+}
+/* Algemene stijlreset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: var(--donkerGrijs);
+  background-color: var(--geel);
+}
+
+/* Back to Top Button Style */
+#backToTopBtn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  display: none;
+  background-color: var(--geel);
+  color: var(--donkerGrijs);
+  border: none;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#backToTopBtn:hover {
+  background-color: var(--geel);
+  transform: scale(1.1);
+}
+
+#backToTopBtn:active {
+  background-color: var(--donkerGrijs);
+}
+
+/* Header-styling */
+
+.main-header {
+  background-image: url("../figuren/svg-image-1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  background-color: var(--geel);
+  color: white;
+}
+
+.main-header .header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content nav {
+  margin: 20px;
+}
+
+.header-content nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.header-content nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.header-content nav ul li {
+  margin: 5px 10px;
+}
+
+.main-header h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  padding: 10px;
+}
+
+/* Banner-styling */
+.banner {
+  background: var(--geel);
+  height: 300px;
+}
+
+.banner .promo {
+  position: absolute;
+  top: 140px;
+  /* background-image: url("../figuren/Header_PL_.png"); */
+  background-image: url("../figuren/Header_PL_.png");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center;
+  height: 456px;
+  width: 98vw;
+}
+
+/* Grid-sectie */
+main .blokken {
+  /* background-color: var(--roze); */
+  background-image: url("../figuren/svg-image-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.info-grid {
+  margin: 0 auto;
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-img {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  margin: 20px;
+  border-radius: 0 0 30px 30px;
+  background-image: url("../figuren/menu/Vrijdag.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ticketLink {
+  text-decoration: none;
+  font-size: 20px;
+  background-color: var(--geel);
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--roze);
+  font-weight: bold;
+}
+
+.uitDeHand {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-item .grid-img .link a {
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.zaterdag .grid-img {
+  background-image: url("../figuren/menu/Zaterdag.jpg");
+}
+.tickets .grid-img {
+  background-image: url("../figuren/menu/Tickets.jpg");
+}
+.contact .grid-img {
+  background-image: url("../figuren/menu/Contact.jpg");
+}
+
+.grid-item .grid-img .link {
+  position: absolute;
+  font-size: 2em;
+  width: 100%;
+  top: 220px;
+  color: white;
+  background-color: var(--roze);
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.grid-item h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.5rem;
+  color: var(--roze);
+}
+
+.spacer {
+  height: 100px;
+  background-color: var(--roze);
+}
+
+/* info */
+.info-tekst {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-color: var(--roze);
+}
+
+.info-tekst h2 {
+  font-weight: 800;
+  border-bottom: 2px solid var(--geel);
+  margin-bottom: 10px;
+}
+
+.info-tekst .main-info {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.info-tekst .main-info {
+  color: white;
+}
+
+.info-tekst .main-info p {
+  margin: 20px 0;
+}
+
+.link {
+  color: white;
+  font-size: x-large;
+}
+
+main .cell-btn {
+  display: none;
+}
+
+/* contact */
+
+main .info-tekst .frm-contact form {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+main .info-tekst .frm-contact input,
+main .info-tekst .frm-contact textarea {
+  width: 100%;
+  border: 0px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+main .info-tekst .frm-contact .btn {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: var(--geel);
+  text-align: center;
+  font-weight: 700;
+  color: var(--donkerGrijs);
+  border-radius: 10px;
+  border: 0px;
+}
+/* Footer */
+footer {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer img {
+  height: 80px;
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+footer .socials img {
+  height: 40px;
+  margin: 10px;
+}
+
+/* band-info */
+.band {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.band-rev {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.band-info {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.pic-box {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 400px;
+  height: 400px;
+}
+
+.vr1 {
+  background-image: url("../figuren/band_img/01Artfx.png");
+}
+
+.vr2 {
+  background-image: url("../figuren/band_img/02BeatenByHippies.png");
+}
+
+.vr3 {
+  background-image: url("../figuren/band_img/03AtomicVulture.png");
+}
+
+.vr4 {
+  background-image: url("../figuren/band_img/04Beuk.png");
+}
+
+.vr5 {
+  background-image: url("../figuren/band_img/05Dyscordia.png");
+}
+
+.za1 {
+  background-image: url("../figuren/band_img/06tuinkabouters.png");
+}
+.za2 {
+  background-image: url("../figuren/band_img/07GoeiPoeier.png");
+}
+.za3 {
+  background-image: url("../figuren/band_img/08preuteleute.png");
+}
+.za4 {
+  background-image: url("../figuren/band_img/09Carlamote.png");
+}
+
+/* media query */
+@media only screen and (max-width: 1000px) {
+  .main-header {
+    min-height: 140px;
+  }
+
+  .main {
+    background-color: var(--roze);
+  }
+
+  .info-div {
+    padding: 20px;
+  }
+
+  .main-header h1 {
+    font-size: 1.2em;
+    padding: 5px;
+  }
+
+  .banner .promo {
+    position: absolute;
+    top: 100px;
+    background-image: url("../figuren/cell/GSM_Banner_PL.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 300px;
+    width: 98vw;
+  }
+
+  .boog {
+    height: 100px;
+    background-image: url("../figuren/svg-image-2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main-header nav {
+    display: none;
+  }
+
+  main .blokken {
+    display: none;
+  }
+
+  main .btn-group {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+
+  main .cell-btn {
+    display: block;
+    background-color: var(--roze);
+  }
+
+  main .btn-cell {
+    background-color: var(--roze);
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    border: 2px solid var(--geel);
+    border-radius: 0 5px;
+  }
+
+  main .btn-cell a {
+    text-decoration: none;
+    color: var(--geel);
+  }
+
+  main .spacer {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .band {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .band-rev {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .band-rev .pic-box {
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  .band-info {
+    margin: 10px;
+  }
+
+  .pic-box {
+    width: 80vw;
+    height: 50vh;
+  }
+
+  .uitDeHand {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.test {
+  background-color: #fff;
+}
